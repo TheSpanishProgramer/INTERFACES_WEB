@@ -1,0 +1,245 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html {
+	margin: 0px;
+	font-size: 2vh;
+}
+
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+* {
+	box-sizing: border-box;
+}
+
+/* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+* {
+	margin: 0;
+}
+
+/* Estilo para las fuentes(Font google) en toda la página */
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+/*Aspecto especifico*/
+address {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: white;
+}
+
+/* Establecemos el centrado y las dimensiones de los elementos principales con una ancho máximo y mínimo (nav, container, footer)*/
+nav, container, footer {
+	width: 90%;
+	max-width: 900px;
+	margin: 104px auto 0 20%;
+	position: fixed;
+}
+
+/* Estilos para el menú principal (nav)*/
+/*nav*/
+nav {
+	background-color: green;
+	height: 50px;
+	z-index: 3;
+}
+
+ul {
+	/*+placement: 0px 17px;*/
+	position: relative;
+	left: 0px;
+	top: 17px;
+}
+
+nav li {
+	display: inline;
+	margin: 0% 5% 0% -3%;
+}
+
+/*link*/
+nav a {
+	color: white;
+	text-decoration: none;
+}
+
+/*mouse over link*/
+nav :hover {
+	color: yellow;
+}
+
+/* Estilos para la cabecera (header)*/
+/* Fondo de la cabecera, imagen con opacidad del 30%*/
+header {
+	background: url("gfx/frigos_conjunto.jpg");
+	background-repeat: no-repeat;
+	margin-top: 182px;
+	height: 388px;
+	background-position: center;
+	/* Center the image */
+	opacity: 30;
+	
+}
+
+
+/* Call for action para Comprar , la palabra "compra" en un link sin subrayado*/
+.calltoaction1 {
+	/*+border-radius: 20px;*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	/*+placement: 67% 34%;*/
+	position: relative;
+	left: 67%;
+	top: 34%;
+	height: 150px;
+	width: 150px;
+	background-color: green;
+	text-align: center;
+	color: yellow;
+	font-weight: bold;
+	line-height: 6.8;
+}
+
+.calltoaction2 {
+	background-color: red;
+	color: white;
+	/*+border-radius: 20px;*/
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-khtml-border-radius: 20px;
+	border-radius: 20px;
+	width: 100px;
+	/*+placement: margin-auto 0% -19%;*/
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	left: 0%;
+	top: -19%;
+	line-height: 4;
+}
+
+a {
+	text-decoration: none;
+}
+
+a :hover {
+	color: yellow;
+}
+
+/* Elemento principal (main) con las 3 cards */
+main h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.columna {
+	font-weight: bold;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.fila:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.card {
+	text-align: center;
+}
+
+/* Línea separador de elementos */
+hr {
+	width: 30%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid red;
+}
+
+/* Estilos para la zona de las cards */
+.fila {
+	display: flex;
+	justify-content: center;
+}
+
+/* Sección con la nevera y los tres párrafos descriptivos (section)*/
+section {
+	width: 400px;
+	text-align: justify;
+	margin: 0 auto;
+}
+
+/* Mostrarmos la primera letra con un borde diferente */
+.nevera p::first-letter {
+	font-size: xx-large;
+	color: red;
+	border-bottom: 2px solid green;
+	border-right: 2px solid green;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+
+.nevera img {
+	margin-right: 9px;
+	float: left;
+}
+
+/* Sección para la galería de imágenes (section)*/
+.gallery {
+	background-repeat: repeat-x, repeat-y;
+	width: 1032px;
+	height: 504px;
+	background: url("gfx/minifrigo.jpg");
+	background-size: 34% 33%;
+}
+
+.container section {
+	width: 600px;
+}
+
+/* Estilos para el pie de página (footer)*/
+footer {
+	background-color: green;
+	color: orange;
+	height: 80px;
+	padding-top: 20px;
+	position: relative;
+	font-size: 9px;
+}
+
+.filafooter {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+/*link icons fontawesome*/
+.colfooter i {
+	font-size: x-large;
+}
+
+/* unvisited link */
+.colfooter i {
+	color: purple;
+}
+
+/* visited link*/
+.colfooter i:visited {
+	color: black;
+}
+
+/* mouse over link */
+.colfooter i:hover {
+	color: aqua;
+}
+
+/* selected link */
+.colfooter i:active {
+	color: gray;
+}

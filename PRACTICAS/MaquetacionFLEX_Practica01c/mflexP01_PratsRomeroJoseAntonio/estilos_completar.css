@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+*
+{
+  margin: 0;
+  font-family: 'Patua One', cursive;
+  font-size: 2.5vh;
+}
+/* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+*
+{
+  box-sizing: border-box;
+}
+/* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+body
+{
+  margin: 0;
+}
+/*Aspecto especifico*/
+/* classe .container - fuente, color, 80% ancho y centrado*/
+
+.container
+{
+  width: 80%;
+  align-content: center;
+  justify-content: center;
+  color: green;
+  margin-left: auto;
+}
+/*color de la letra específico*/
+#colorAutor
+{
+  color: #3478AB;
+}
+/*La cabecera*/
+
+.cabecera
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 10vh;
+  align-items: center;
+  width: 100%;
+}
+/* El contenedor flex para la primera fila de contenido .content_wrapper. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+ 
+.content_wrapper
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+/* El menú */
+nav
+{
+  display: flex;
+  height: 50vh;
+}
+nav ul
+{
+  list-style: none;
+  margin-left: -40.9vh;
+  line-height: 3;
+}
+
+/* El elemento principal main*/
+
+main
+{
+  width: 183.9vh;
+  font-size: 1vh;
+  border: 1px solid grey;
+  border-radius: 5vh;
+  display: flex;
+  text-align: center;
+  padding: 5vh 0 3.4vh;
+  margin-bottom: 4.1vh;
+  margin-right: 4vh;
+}
+main figure figcaption
+{
+  font-size: 2vh;
+  width: 78.5vh;
+  margin-left: -28.6vh;
+}
+main img
+{
+  border-radius: 5vh;
+  height: 32.3vh;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: -12.3vh;
+}
+main figure
+{
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Artículo. Imágenes pequeñas */
+article
+{
+  width: 100vh;
+  border: 1px solid grey;
+  padding: 5vh 0;
+  border-radius: 5vh;
+  text-align: center;
+  margin-right: 8.1vh;
+  height: 54vh;
+}
+article img
+{
+  height: 32.3vh;
+  /*+border-radius: 5vh;*/
+  -moz-border-radius: 5vh;
+  -webkit-border-radius: 5vh;
+  -khtml-border-radius: 5vh;
+  border-radius: 5vh;
+  width: 30vh;
+}
+
+/* El contenedor flex para la segunda fila de contenido .articles. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+ 
+.articles
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 0;
+}
+.articles img
+{
+  /*+border-radius: 5vh;*/
+  -moz-border-radius: 5vh;
+  -webkit-border-radius: 5vh;
+  -khtml-border-radius: 5vh;
+  border-radius: 5vh;
+}
+
+/* Pie de la página */
+/* El contenedor flex para la tercera fila de contenido footer. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+ 
+.divfooter
+{
+  display: flex;
+  justify-content: space-between;
+  margin-left: -38.8vh;
+  height: 80.3px;
+  padding: 4vh;
+  vertical-align: middle;
+}
+
+/* Cambio de color por defecto y personalizacións de los elementos de tipo enlace <a> */
+
+a{
+  color: green;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+a:hover{
+  color: #3478AB;
+  text-decoration: underline green;
+}
+
+a:active{
+  color: green;
+}
+.social
+{
+  color: green;
+}
+.fa-snapchat, .fa-facebook, .fa-twitter, .fa-whatsapp, .fa-instagram
+{
+  font-size: xx-large;
+}
+#clolorFooter
+{
+  color: green;
+}

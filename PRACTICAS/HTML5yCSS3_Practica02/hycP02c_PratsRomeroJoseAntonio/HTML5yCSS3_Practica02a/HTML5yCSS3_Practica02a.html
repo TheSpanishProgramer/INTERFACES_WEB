@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta autor:="Jose Antonio Prats Romero">
+	
+	<address> Jose Antonio Prats Romero 
+	<br>Carretera Sacramento Nº 20 2º F
+	<br>Código Postal: 04120
+	<br>España </address>
+	
+	<title>Ejercicio 01: formulario personalizado de listas y opciones</title>
+	
+	<body>
+		
+	<!-- Título centrado -->
+	<div style="width: 900px; text-align: center; margin: 0 auto;">
+	<h2>HOJA DE INSCRIPCIÓN</h2>
+	<h2> EN LOS CICLOS DE GRADO SUPERIOR</h2>
+	</div>
+	<p>
+		
+	<div style="background-color: grey; border-style: solid; border-width: 1px;">
+	<div style="background-color: white; display: inline-block; position:relative; bottom:7px; border-width: 1px; border-style: solid; margin-left: 10px;">
+		
+	Datos personales
+	
+	</div>
+	
+	<form autocomplete="on" action="_self">
+	<br>
+	
+	<table width="200" border="0">
+		  <tbody>
+			<tr>
+			  <td><span style="float: left; margin-left: 10px;">Nombre:<br>
+			  <input id="idNombre" type="text" name="miNombre" placeholder="Nombre"></span>
+			  </td>
+			  <td><span style="float: left; margin-left: 10px;">Apellidos:<br>
+			  <input id="idApellidos" type="text" name="miApellido" placeholder="Apellidos"></span>
+			  </td>
+			  <td><span style="float: left;">DNI:<br>
+			  <input id="idDNI" type="text" name="miDNI" pattern="[0-9]{8}[A-Za-z]{1}" title="Debe introducir 8 números y una letra" placeholder="DNI" required="Campo obligatorio"></span>
+			  </td>
+			  <td><span style="float: left;">Teléfono:<br>
+			  <input id="idTelefono" type="tel" name="telefono" pattern="+34[0-9]{9}" placeholder="Teléfono (+34)" title="Introduce código de España (+34) seguido de 9 números" required="Campo obligatorio"></span>
+			  </td>
+			</tr>
+			<tr>
+			  <td><span style="float: left; margin-left: 10px;">Localidad nacimiento:<br>
+			  <input type="text" name="localidad" placeholder="Localidad nacimiento"></span>
+			  </td>
+			  <td><span style="float: left;">Provincia:<br>
+			  	<select name=pais onchange="cambia_provincia()">
+			  	<option value="0" selected>Almería
+			  	<option value="1">Cádiz
+			  	<option value="2">Córdoba
+			  	<option value="3">Granada
+			  	<option value="4">Huelva
+			  	<option value="5">Jaén
+			  	<option value="6">Málaga
+			  	<option value="7">Sevilla
+			  </select>
+			  </span>
+			  </td>
+			  <td><span style="float: left;">Fecha nacimiento<br>
+			  <input type="date" name="fecha" step="1" min="1900-01-01" max="2020-12-31" value="aaa-mm-dd">
+			  </td>
+			  <td>&nbsp;</td>
+			</tr>
+			<tr>
+				  <td colspan="2"><span style="float: left; margin-left: 10px;">Dirección<br>
+				  <input style="width: 200px;" type="text" size="120" maxlength="120" value="Dirección" name="direccion" cols="60"></span>
+				  </td>
+				  <td><span style="float: left;">Código postal:<br>
+				  <input type="text" id="codigopostal" placeholder="Código postal" maxlength="5" required="required"></span>
+				  </td>
+				</tr>
+		  </tbody>
+		</table>
+</span>
+	
+	
+	<br>
+	<br>
+	<br>
+	</div>
+	
+	<!-- Forma de acceso -->
+	<div style="background-color: orange; border-style: solid; border-width: 1px; margin-top: 20px;">
+	<div style="background-color: white; display: inline-block; position:relative; bottom:7px; border-width: 1px; border-style: solid; margin-left: 10px;">
+	Forma de acceso
+	</div>
+	<p>
+		
+	<span style="margin-left: 55px">
+	<input type="radio" name="accesodirecto" value="directo">Directo<br>
+	<span style="margin-left: 90px">
+	<input type="radio" name="accesodirecto" value="bachilleratolog"> Bachillerato Log Modalidad <input id="idBachillerato" type="text" name="miBachillerato" placeholder=""><br>
+	<span style="margin-left: 90px">
+	<input type="radio" name="accesodirecto" value="experimental"> Experimental<br>
+	<span style="margin-left: 90px">
+	<input type="radio" name="accesodirecto" value="cou"> COU Opción <input id="idCOU" type="text" name="miCOU" placeholder=""><br>
+	<span style="margin-left: 90px">
+	<input type="radio" name="accesodirecto" value="experimental"> FP2<br>
+	<span style="margin-left: 90px">
+		<input type="radio" name="accesodirecto" value="otros"> Otros (especifique) <input id="idOtros" type="text" name="miOtros" placeholder="">
+		<span style="margin-left: 90px">
+	</p>
+	<span style="margin-left: 55px">
+		<input type="radio" name="pLibre" value="pLibre">Prueba Libre<br>
+	<br>
+	Adjuntar certificado de notas <input type="file" name="archivosubido" value="archivosubido"><br> <!--Boton para seleccionar un archivo sin restriccion de tipo de documento-->
+	</div>
+	<!-- Documentos adjuntados -->
+	<div style="background-color: red; border-style: solid; border-width: 1px; margin-top: 20px;">
+	<div style="background-color: white; display: inline-block; position:relative; bottom:7px; border-width: 1px; border-style: solid; margin-left: 10px;">
+		
+	Documentos adjuntos
+	</div>
+	<p>
+			
+	<table width="400" border="0">
+		  <tbody>
+			<tr>
+			  <td><span style="float: left;">
+				  <input type="checkbox" id="documento1" name="documento1" value="dni"> 
+				  <label for="documento1"> Fotocopia DNI</label></span><br>
+				</td>
+			  <td><input type="checkbox" id="documento2" name="documento2" value="certificadoacademico">
+			  <label for="documento2"> Certificado académico</label></span><br>
+		  		</td>
+			</tr>
+			<tr>
+			  <td colspan="2"><input type="checkbox" id="documento3" name="documento3" value="Otros">
+			  <label for="documento3"> Otros documentos (especifique)</label>
+			  <input type="text" id="codigopostal" placeholder="Código postal" maxlength="5" required="required">
+			  </td>
+			
+			</tr>
+		  </tbody>
+		</table>
+	<p>
+	<p>	
+	Cargar documentos: <input type="file" name="archivossubidos[]" value="carga de ficheros" multiple accept="application/pdf, .doc, .docx, .odf"> <!--Boton para seleccionar varios ficheros con restriccion de tipo de fichero-->
+	
+	</div>
+	<p><input type="image" src="enviar.webp" name="botondeenvio" alt="Enviar formulario" width="145" height="65">
+	</form>
+	</body>
+</html>

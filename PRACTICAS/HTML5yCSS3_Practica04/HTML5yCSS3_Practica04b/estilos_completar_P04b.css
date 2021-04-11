@@ -1,0 +1,67 @@
+/* SELECTORES SIMPLES */
+
+/* Para todos los elementos de la pagina */
+* {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aplicado para blockquotes */
+blockquote {
+  color: grey;
+  font-style: italic;
+}
+
+/* Todos los enlaces la pagina con diferente color*/
+a {
+  color: #C30;
+}
+
+/* Todos los elementos <em> con la clase "especial" en toda la pagina
+fondo gris y color texto negro */
+em.especial {
+  color: #FFFFFF;
+  background: grey;
+}
+
+/* PSEUDOSELECTORES */
+
+/* Fuente en BOLD al hacer clic en el hipervínculo */
+a:active {
+font-weight: bold;
+}
+/* Cambio color hipervínculo a verde tras visitado (Comprobar 
+únicamente con enlace de Blender) */
+a:visited {
+	color: green;
+}
+
+/* Los párrafos ahora tienen un fondo amarillo al pasar el puntero del ratón sobre ellos. */
+p:hover {
+background-color: yellow;
+}
+
+/* Anaranjar aquellos párrafos que sean primer elemento hijo de un elemento */
+p em:first-child {
+  color: orange;
+}
+
+/* PSEUDOELEMENTOS */
+/* Primera línea de párrafo en mayúscula */
+p:first-line {
+	text-transform: uppercase;
+}
+
+/* Añade la cadena "Capítulo - " a los elementos h2 previamente*/
+h2:before {
+	content: "Capítulo - ";
+}
+/* Todos los párrafos que sean el primer hijo de un contenedor (div, span, etc.). en rojo */
+p:nth-child(1) {
+	color: red;
+} 
+/* Todos los párrafos que sean el primer hijo de un contenedor (div, span, etc.). en verde y en negrita*/
+p:nth-child(2) {
+	color: green;
+	font-weight: bold;
+}

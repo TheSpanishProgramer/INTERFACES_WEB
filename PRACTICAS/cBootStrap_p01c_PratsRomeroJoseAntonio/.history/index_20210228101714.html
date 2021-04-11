@@ -1,0 +1,1298 @@
+<!--
+     Interactividad Componentes con BootStrap 4
+     File: index.html
+     Author: Jose Antonio Prats Romero
+     Descripción: Plantilla HTML con los enlaces necesarios para maquetar con BootStrap 4
+-->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Bootstrap 4 cBootStrap_p01c_PratsRomeroJoseAntonio</title>
+		
+		<!-- Metadatos -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Bootstrap 4 Landing Page para una plataforma de Elearning">
+		<meta name="keywords" content="Curso, Elearning, formacion"/>
+		<meta name="author" content="Jose Antonio Prats Romero">
+		<meta name="copyright" content="Jose Antonio Prats Romero"/>
+
+		<!-- BootstrapCDN -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+		integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+
+		<!-- url de los iconos utilizados https://www.flaticon.es/ -->
+		<link rel="shortcut icon" href="assets/images/icon/011-computer.png">
+		
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:800|Roboto:400,500,700&display=swap" rel="stylesheet">
+		
+		<!-- FontAwesome JS-->
+		<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+		<!-- jQuery para el apartado de aviso de Cookies-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+		<!-- Theme CSS -->
+		<link id="theme-style" rel="stylesheet" href="assets/css/bootstraptpt.css">
+
+	</head>
+
+	<body>
+
+		<header class="header">
+			<!-- Style de la barra de navegacion principal -->
+			<style type="text/css">
+				.navbar-brand {
+					height: 40px;
+				}
+				#logo {
+					max-height: 40px;
+					padding: 0 auto;
+					margin-top: 0;
+				}
+			</style>
+			<!--Menu de navegacion principal-->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+				<a class="navbar-brand" href="index.html"><img id="logo" src="assets/images/icon/011-computer.png" alt="logo" class="mx-auto d-block"> </a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Inicio <span class="sr-only"></span></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Nuestros cursos
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" target="_blank">Con certificado oficial</a>
+							<a class="dropdown-item" href="#" target="_blank">Sin certificado oficial</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Contacta con nosotros</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Sobre nosotros
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" target="_blank">Nuestra filosofia</a>
+							<a class="dropdown-item" href="#" target="_blank">El equipo de formadores</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#" target="_blank">Quieres formar parte de nuestro equipo</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Contacto
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#" target="_blank">Quieres informarte de algun curso</a>
+							<a class="dropdown-item" href="#" target="_blank">Quieres ser formador</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#" target="_blank">¿Que necesitas que no tengamos?</a>
+						</div>
+					</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search"
+						placeholder="Busqueda" aria-label="SearBch">
+						<button type="button" target="_blank" class="btn btn-primary my-2 my-sm-0"
+						data-toggle="modal" data-target="#loginModal">Login</button>
+						<button type="button" target="_blank" class="btn btn-primary my-2 my-sm-0"
+						data-toggle="modal" data-target="#registroModal">Registro</button>
+					</form>
+				</div>
+			</nav>
+			<!--Contenido de la cabecera-->
+				<section class="hero-section">
+					<div class="hero-mask">
+					</div>
+					<div class="container text-center py-5">
+						<div class="single-col-max mx-auto">
+							<div class="hero-heading-upper pt-3 mb-3">El aprendizaje en línea es el presente y el futuro <br class="d-md-none"></div>
+							<h1 class="hero-heading mb-5">
+								<span class="brand mb-4 d-block"><span class="text-highlight pr-2"><--></span><span class="name">R-Learning</span><span class="text-highlight pl-2"><--></span></span>
+								<span class="desc d-block">¿Es necesario replantear el aprendizaje?</span>
+							</h1>
+							<!--Bonton de contacto de la cabecera-->
+							<div class="text-center mb-5">
+								<a href="#section-precio" class="btn btn-primary btn-lg scrollto">Comenzamos</a>
+							</div>
+							<!--Contenido de la cabecera-->
+							<div class="hero-summary">
+								<div class="row">
+									<div class="item col-4">
+										<div class="summary-desc mb-1"><i class="icon fas fa-video mr-2"></i>Contenidos</div>
+										<h4 class="summary-heading">100+ <span class="desc">Videos</span></h4>
+									</div>
+									<div class="item col-4">
+										<div class="summary-desc mb-1"><i class="icon fas fa-clock mr-2"></i>Duracion media de los cursos</div>
+										<h4 class="summary-heading">72 <span class="desc">Horas</span></h4>
+									</div>
+									<div class="item col-4">
+										<div class="summary-desc mb-1"><i class="icon fas fa-user-circle mr-2"></i>Acceso a los cursos</div>
+										<h4 class="summary-heading">De por vida</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+		</header>
+		
+		<!--Menu de acceso rapido a las secciones de la pagina-->
+			<div class="sections-wrapper">
+				<div class="section-nav-space-holder d-lg-block">
+					<div id="section-nav-wrapper" class="section-nav-wrapper text-center">
+						<div class="container-fluid justify-content-center">
+							<ul id="section-nav" class="section-nav nav list-inline">
+								<li class="nav-item"><a class="nav-link scrollto"  href="#section-objetivo">Nuestro Objetivo</a></li>
+								<li class="nav-item"><a class="nav-link scrollto"  href="#section-content">Contenido</a></li>
+								<li class="nav-item"><a class="nav-link scrollto"  href="#section-solicitarDemo">¿Quieres Una Demo?</a></li>
+								<li class="nav-item"><a class="nav-link scrollto"  href="#section-profesorCurso">Profesor Del Curso</a></li>
+								<li class="nav-item"><a class="nav-link scrollto"  href="#section-reviews">Opiniones</a></li>
+								<li class="nav-item"><a class="nav-link scrollto"  href="#section-precio">Precio</a></li>
+								<li class="nav-item"><a class="nav-link scrollto"  href="#section-carrousel">Sin Escusas</a></li>
+								<li class="nav-item"><a class="nav-link" href="#section-otrosCursos">Otros Cursos</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="section-blocks mb-5">
+					<!--Seccion objetivo-->
+					<div id="section-objetivo" class="section-objetivo section pt-md-4 pt-lg-5">
+						<div class="container py-5">
+							<div class="section-col-max mx-auto">
+								<h3 class="section-title mb-4">El aprendizaje en línea es el presente y el futuro: Nuevo Curso sobre E-learning</h3>
+								<p class="mb-4">Con nuestro curso. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae posuere nibh, at posuere enim. Sed vulputate ante congue, euismod odio a, gravida neque. Maecenas volutpat risus dolor.</p>
+								<div class="text-center mb-3">
+									<ul class="column-list list-unstyled mx-auto d-inline-block">
+										<li><i class="theme-check-icon fas fa-check mr-2"></i>Course highlight  lorem ipsum</li>
+										<li><i class="theme-check-icon fas fa-check mr-2"></i>Course highlight  lorem ipsum</li>
+										<li><i class="theme-check-icon fas fa-check mr-2"></i>Course highlight  lorem ipsum</li>
+										<li><i class="theme-check-icon fas fa-check mr-2"></i>Course highlight  lorem ipsum</li>
+										<li><i class="theme-check-icon fas fa-check mr-2"></i>Course highlight  lorem ipsum</li>
+										<li><i class="theme-check-icon fas fa-check mr-2"></i>Course highlight  lorem ipsum</li>
+									</ul>
+								</div>
+								<!--Boton para ir a comprar nuestro curso-->
+								<div class="text-center mb-5">
+									<a class="btn btn-primary scrollto" href="#section-precio">Registrate Ya</a>
+								</div>
+								<!--Video presentacion del explicando el de que trata el curso-->
+								<div class="video-container">
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe width="640" height="360" src="https://www.youtube.com/embed/GCW1LzzdFsU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="section-content" class="section-content section">
+						<div class="container py-5">
+							<div class="section-col-max mx-auto">
+								<h3 class="section-title mb-5">De Que Se Compone El Curso</h3>
+								<!--Composicion del curso-->
+								<div class="data-summary justify-content-center text-center">
+									<div class="row mb-5">
+										<div class="item col-6 col-lg-3 mb-3 mb-lg-0">
+											<div class="data">10+</div>
+											<div class="meta">Módulos</div>
+										</div>
+										<div class="item col-6 col-lg-3 mb-3 mb-lg-0">
+											<div class="data">80+</div>
+											<div class="meta">Videos</div>
+										</div>
+										<div class="item col-6 col-lg-3 mb-3 mb-lg-0">
+											<div class="data">40+</div>
+											<div class="meta">Recursos</div>
+										</div>
+										<div class="item col-6 col-lg-3 mb-3 mb-lg-0">
+											<div class="data">72</div>
+											<div class="meta">Horas de duración</div>
+										</div>
+									</div>
+								</div>
+								<!--Descripcion del curso por modulos-->
+								<h4 class="text-center mb-4">Modulos Del Curso</h4>
+								
+								<div class="accordion module-accordion" id="module-accordion">
+									<div class="module-item card">
+										<!--Descripcion del curso por modulos primer modulo-->
+										<div class="module-header card-header" id="module-heading-1">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-1" data-toggle="collapse" data-target="#module-1" aria-expanded="true" aria-controls="module-1">
+													<i class="module-toggle-icon fas fa-minus mr-2"></i>
+													Modulo 1 - Presentación
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-1" class="module-content collapse show" aria-labelledby="module-heading-1" >
+											<div class="card-body p-0">
+												<div class="module-intro p-3">Modulo de introduccion y presentacion. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum elit non neque venenatis, ut mattis sapien lobortis. Integer eget turpis non ipsum convallis convallis vitae eu nunc.</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">1.1</span><a class="video-play-trigger" href="#" data-toggle="modal" data-target="#modal-intoVideo">Modulo Presentación Del Curso</a><span class="badge badge-primary ml-2">Previsualizar</span></div>
+														<div class="col-3 text-right extra-info">05:01</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">1.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">1.3</span>Modulo Dolor Sit Amet</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">1.4</span>Modulo Consectetur Adipiscing</div>
+														<div class="col-3 text-right extra-info">07:50</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">1.5</span>Recursos Relacionados</div>
+														<div class="col-3 text-right extra-info"><span class="icon dripicons-download mr-2"></span>Recursos</div>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos segundo modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-2">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-2" data-toggle="collapse" data-target="#module-2" aria-expanded="true" aria-controls="module-2">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 2 - Lorem Ipsum Dolor Sit Amet
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-2" class="module-content collapse" aria-labelledby="module-heading-2" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">2.1</span>Modulo Video De introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">2.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">2.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>
+																						
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos tercer modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-3">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-3" data-toggle="collapse" data-target="#module-3" aria-expanded="true" aria-controls="module-3">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 3 - Lorem ipsum dolor sit amet. 
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-3" class="module-content collapse" aria-labelledby="module-heading-3" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">3.1</span>Modulo Video De introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">3.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">3.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos cuarto modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-4">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-4" data-toggle="collapse" data-target="#module-4" aria-expanded="true" aria-controls="module-4">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 4 - Lorem ipsum dolor sit amet. 
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-4" class="module-content collapse" aria-labelledby="module-heading-4" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">4.1</span>Modulo Video De Introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">4.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">4.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos quito modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-5">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-5" data-toggle="collapse" data-target="#module-5" aria-expanded="true" aria-controls="module-5">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 5 - Lorem ipsum dolor sit amet. 
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-5" class="module-content collapse" aria-labelledby="module-heading-5" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">5.1</span>Modulo Video De Introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+													<div class="col-9"><span class="theme-text-secondary mr-2">5.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">5.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos sexto modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-6">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-6" data-toggle="collapse" data-target="#module-6" aria-expanded="true" aria-controls="module-6">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 6 - Lorem ipsum dolor sit amet. 
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-6" class="module-content collapse" aria-labelledby="module-heading-6" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">6.1</span>Modulo Video De Introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+													<div class="col-9"><span class="theme-text-secondary mr-2">6.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">6.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>  
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos septimo modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-7">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-7" data-toggle="collapse" data-target="#module-7" aria-expanded="true" aria-controls="module-6">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 7 - Lorem ipsum dolor sit amet. 
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-7" class="module-content collapse" aria-labelledby="module-heading-7" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">7.1</span>Modulo Video De Introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+													<div class="col-9"><span class="theme-text-secondary mr-2">7.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">7.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos octavo modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-8">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-8" data-toggle="collapse" data-target="#module-8" aria-expanded="true" aria-controls="module-6">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 8 - Lorem ipsum dolor sit amet. 
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-8" class="module-content collapse" aria-labelledby="module-heading-8" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">8.1</span>Modulo Video De Introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+													<div class="col-9"><span class="theme-text-secondary mr-2">8.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">8.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div> 
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos noveno modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-9">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-9" data-toggle="collapse" data-target="#module-9" aria-expanded="true" aria-controls="module-6">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 9 - Lorem ipsum dolor sit amet. 
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-9" class="module-content collapse" aria-labelledby="module-heading-9" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">9.1</span>Modulo Video De Introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+													<div class="col-9"><span class="theme-text-secondary mr-2">9.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">9.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Descripcion del curso por modulos decimo modulo-->
+									<div class="module-item card">
+										<div class="module-header card-header" id="module-heading-10">
+											<h4 class="module-title mb-0">
+												<a class="card-toggle module-toggle" href="#module-10" data-toggle="collapse" data-target="#module-10" aria-expanded="true" aria-controls="module-6">
+													<i class="module-toggle-icon fas fa-plus mr-2"></i>
+													Modulo 10 - Lorem ipsum dolor sit amet. 
+												</a>
+											</h4>
+										</div>
+										<!--Sub modulos de este apartado-->
+										<div id="module-10" class="module-content collapse" aria-labelledby="module-heading-10" >
+											<div class="card-body p-0">
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">10.1</span>Modulo Video De Introduccion</div>
+														<div class="col-3 text-right extra-info">02:30</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+													<div class="col-9"><span class="theme-text-secondary mr-2">10.2</span>Modulo Lorem Ipsum</div>
+														<div class="col-3 text-right extra-info">15:20</div>
+													</div>
+												</div>
+												<div class="module-sub-item p-3">
+													<div class="row justify-content-between">
+														<div class="col-9"><span class="theme-text-secondary mr-2">10.3</span>Modulo Suscipit Arcu</div>
+														<div class="col-3 text-right extra-info">23:15</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<div class="text-center mt-5">
+									<a class="btn btn-primary scrollto" href="#section-precio">Inscribete Ahora</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Seccion de solicitud de demostracion de cursos-->
+					<div id="section-solicitarDemo" class="section-solicitarDemo section">
+						<div class="container py-5">
+							<div class="section-col-max mx-auto">
+								<h3 class="section-title mb-4">Para Quien Va Dirigido El Curso</h3>
+									<p class="mb-4">Este curso va dirigido a cualquier persona profesional o no que quiera iniciarse en el mundo del E-Learning
+										lorem ipsum consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Lorem ipsum dolor sit amet, consectetuer 
+										adipiscing elit. 
+									</p>
+								<div class="lead-form-wrapper single-col-max mx-auto theme-bg-light rounded p-5">
+									<h4 class="form-heading text-center mb-3">Quiere Solicitar Una Demo</h4>
+									<div class="form-intro text-center mb-3">Registre su curreo y tenga acceso a una demo.</div>
+									<div class="form-wrapper">
+										<form class="lead-form">
+											<div class="form-group mb-3">
+												<label for="email" class="sr-only">Email</label>
+												<input type="email" class="form-control " id="email" placeholder="Escriba Su Correo Electronico">
+											</div>
+											<button type="submit" class="btn btn-ghost btn-submit btn-block">Enviar Solicitud De Demo</button>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Seccion del profesor que imparte el curso-->
+					<div id="section-profesorCurso" class="section-profesorCurso section pb-5">
+						<div class="container">
+							<div class="container-inner p-5 position-relative theme-bg-primary rounded">
+								<div class="section-bg-container"></div>
+								<div class="row">
+									<div class="col-12 col-lg-3">
+										<div class="tutor-img-holder mb-5 mb-lg-0 text-center">
+											<img class="tutor-profile img-fluid rounded" src="assets/images/profesor.jpg" alt="">
+										</div>
+									</div>
+									<div class="col-12 col-lg-9">
+										<div class="pl-lg-4">
+											<h3 class="section-title mb-4 text-white text-lg-left">Informacion Del Profesor</h3>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at hendrerit augue, eu pellentesque dolor. Praesent vel congue velit. Fusce lorem nisl, condimentum in pulvinar et, laoreet vel felis. Duis tincidunt ex sed risus posuere, quis venenatis quam tincidunt. Quisque arcu lacus, mollis volutpat turpis sit amet, interdum eleifend sem.</p>
+											<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam auctor leo at mi dignissim, tempor porttitor leo vehicula.</p>	
+											<div class="text-center text-lg-left">
+												<ul class="social-list list-unstyled mt-4 mb-0 mx-auto mx-lg-0">
+													<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+													<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="fa fa-globe fa-fw"></i></a></li>
+													<li class="list-inline-item"><a href="#"><i class="fa fa-blog fa-fw"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Seccion del opiniones-->
+					<div id="section-reviews" class="section-reviews py-5">
+						<div class="container">
+							<h3 class="section-title mb-5">Opiniones De Nuestros Clientes</h3>
+							<div class="row">
+								<!--Opinion 1-->
+								<div class="col-12 col-md-6 col-lg-4 mb-4">
+									<div class="review-item rounded p-5">
+										<blockquote class="quote mb-4">
+											<div class="quote-icon-holder">
+												<svg class="quote-icon-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<path class="quote-icon-path" d="M19.2093023,0 L19.2093023,1.17365269 C17.5968912,1.78044216 16.3333379,2.73452443 15.4186047,4.03592814 C14.5038714,5.33733186 14.0465116,6.69061174 14.0465116,8.09580838 C14.0465116,8.39920311 14.0930228,8.62275377 14.1860465,8.76646707 C14.2480623,8.86227593 14.3178291,8.91017964 14.3953488,8.91017964 C14.4728686,8.91017964 14.5891465,8.85429198 14.744186,8.74251497 C15.2403126,8.37524766 15.8682133,8.19161677 16.627907,8.19161677 C17.5116323,8.19161677 18.2945702,8.56287054 18.9767442,9.30538922 C19.6589181,10.0479079 20,10.9301346 20,11.9520958 C20,13.0219614 19.608531,13.9640678 18.8255814,14.7784431 C18.0426317,15.5928184 17.0930288,16 15.9767442,16 C14.6744121,16 13.5503923,15.4491073 12.6046512,14.3473054 C11.65891,13.2455035 11.1860465,11.7684723 11.1860465,9.91616766 C11.1860465,7.76046826 11.8294509,5.82835186 13.1162791,4.11976048 C14.4031072,2.4111691 16.4340947,1.03792934 19.2093023,0 Z M8.02325581,0 L8.02325581,1.17365269 C6.41084465,1.78044216 5.1472914,2.73452443 4.23255814,4.03592814 C3.31782488,5.33733186 2.86046512,6.69061174 2.86046512,8.09580838 C2.86046512,8.39920311 2.90697628,8.62275377 3,8.76646707 C3.06201581,8.86227593 3.13178256,8.91017964 3.20930233,8.91017964 C3.28682209,8.91017964 3.4031,8.85429198 3.55813953,8.74251497 C4.05426605,8.37524766 4.68216674,8.19161677 5.44186047,8.19161677 C6.32558581,8.19161677 7.10852372,8.56287054 7.79069767,9.30538922 C8.47287163,10.0479079 8.81395349,10.9301346 8.81395349,11.9520958 C8.81395349,13.0219614 8.42248453,13.9640678 7.63953488,14.7784431 C6.85658523,15.5928184 5.90698233,16 4.79069767,16 C3.48836558,16 2.36434581,15.4491073 1.41860465,14.3473054 C0.472863488,13.2455035 0,11.7684723 0,9.91616766 C0,7.76046826 0.643404419,5.82835186 1.93023256,4.11976048 C3.2170607,2.4111691 5.24804814,1.03792934 8.02325581,0 Z" ></path>
+													</g>
+												</svg>
+											</div>
+											<p>Gran curso lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum mi sed tortor lobortis, nec feugiat nisi venenatis.</p>
+										</blockquote>
+										<div class="source">
+											<div class="row align-items-center">
+												<div class="col-3 col-lg-4">
+													<div class="profile"><img class="profile-image img-fluid" src="assets/images/users/user-1.jpg" alt=""></div>
+												</div>
+												<div class="col-9 col-lg-8">
+													<div class="name font-weight-bold">Pepe Viyuela</div>
+													<div class="meta">Alcafran</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Opinion 2-->
+								<div class="col-12 col-md-6 col-lg-4 mb-4">
+									<div class="review-item rounded p-5">
+										<blockquote class="quote mb-4">
+											<div class="quote-icon-holder">
+												<svg class="quote-icon-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<path class="quote-icon-path" d="M19.2093023,0 L19.2093023,1.17365269 C17.5968912,1.78044216 16.3333379,2.73452443 15.4186047,4.03592814 C14.5038714,5.33733186 14.0465116,6.69061174 14.0465116,8.09580838 C14.0465116,8.39920311 14.0930228,8.62275377 14.1860465,8.76646707 C14.2480623,8.86227593 14.3178291,8.91017964 14.3953488,8.91017964 C14.4728686,8.91017964 14.5891465,8.85429198 14.744186,8.74251497 C15.2403126,8.37524766 15.8682133,8.19161677 16.627907,8.19161677 C17.5116323,8.19161677 18.2945702,8.56287054 18.9767442,9.30538922 C19.6589181,10.0479079 20,10.9301346 20,11.9520958 C20,13.0219614 19.608531,13.9640678 18.8255814,14.7784431 C18.0426317,15.5928184 17.0930288,16 15.9767442,16 C14.6744121,16 13.5503923,15.4491073 12.6046512,14.3473054 C11.65891,13.2455035 11.1860465,11.7684723 11.1860465,9.91616766 C11.1860465,7.76046826 11.8294509,5.82835186 13.1162791,4.11976048 C14.4031072,2.4111691 16.4340947,1.03792934 19.2093023,0 Z M8.02325581,0 L8.02325581,1.17365269 C6.41084465,1.78044216 5.1472914,2.73452443 4.23255814,4.03592814 C3.31782488,5.33733186 2.86046512,6.69061174 2.86046512,8.09580838 C2.86046512,8.39920311 2.90697628,8.62275377 3,8.76646707 C3.06201581,8.86227593 3.13178256,8.91017964 3.20930233,8.91017964 C3.28682209,8.91017964 3.4031,8.85429198 3.55813953,8.74251497 C4.05426605,8.37524766 4.68216674,8.19161677 5.44186047,8.19161677 C6.32558581,8.19161677 7.10852372,8.56287054 7.79069767,9.30538922 C8.47287163,10.0479079 8.81395349,10.9301346 8.81395349,11.9520958 C8.81395349,13.0219614 8.42248453,13.9640678 7.63953488,14.7784431 C6.85658523,15.5928184 5.90698233,16 4.79069767,16 C3.48836558,16 2.36434581,15.4491073 1.41860465,14.3473054 C0.472863488,13.2455035 0,11.7684723 0,9.91616766 C0,7.76046826 0.643404419,5.82835186 1.93023256,4.11976048 C3.2170607,2.4111691 5.24804814,1.03792934 8.02325581,0 Z" ></path>
+													</g>
+												</svg>
+											</div>
+											<p>Altamente recomendado lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor id velit in ullamcorper nam eu elit nec nunc. </p>
+										</blockquote>
+										<div class="source">
+											<div class="row align-items-center">
+												<div class="col-3 col-lg-4">
+													<div class="profile"><img class="profile-image img-fluid" src="assets/images/users/user-2.jpg" alt=""></div>
+												</div>
+												<div class="col-9 col-lg-8">
+													<div class="name font-weight-bold">Super Lopez</div>
+													<div class="meta">Planeta Chiton</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Opinion 3-->
+								<div class="col-12 col-md-6 col-lg-4 mb-4">
+									<div class="review-item rounded p-5">
+										<blockquote class="quote mb-4">
+											<div class="quote-icon-holder">
+												<svg class="quote-icon-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<path class="quote-icon-path" d="M19.2093023,0 L19.2093023,1.17365269 C17.5968912,1.78044216 16.3333379,2.73452443 15.4186047,4.03592814 C14.5038714,5.33733186 14.0465116,6.69061174 14.0465116,8.09580838 C14.0465116,8.39920311 14.0930228,8.62275377 14.1860465,8.76646707 C14.2480623,8.86227593 14.3178291,8.91017964 14.3953488,8.91017964 C14.4728686,8.91017964 14.5891465,8.85429198 14.744186,8.74251497 C15.2403126,8.37524766 15.8682133,8.19161677 16.627907,8.19161677 C17.5116323,8.19161677 18.2945702,8.56287054 18.9767442,9.30538922 C19.6589181,10.0479079 20,10.9301346 20,11.9520958 C20,13.0219614 19.608531,13.9640678 18.8255814,14.7784431 C18.0426317,15.5928184 17.0930288,16 15.9767442,16 C14.6744121,16 13.5503923,15.4491073 12.6046512,14.3473054 C11.65891,13.2455035 11.1860465,11.7684723 11.1860465,9.91616766 C11.1860465,7.76046826 11.8294509,5.82835186 13.1162791,4.11976048 C14.4031072,2.4111691 16.4340947,1.03792934 19.2093023,0 Z M8.02325581,0 L8.02325581,1.17365269 C6.41084465,1.78044216 5.1472914,2.73452443 4.23255814,4.03592814 C3.31782488,5.33733186 2.86046512,6.69061174 2.86046512,8.09580838 C2.86046512,8.39920311 2.90697628,8.62275377 3,8.76646707 C3.06201581,8.86227593 3.13178256,8.91017964 3.20930233,8.91017964 C3.28682209,8.91017964 3.4031,8.85429198 3.55813953,8.74251497 C4.05426605,8.37524766 4.68216674,8.19161677 5.44186047,8.19161677 C6.32558581,8.19161677 7.10852372,8.56287054 7.79069767,9.30538922 C8.47287163,10.0479079 8.81395349,10.9301346 8.81395349,11.9520958 C8.81395349,13.0219614 8.42248453,13.9640678 7.63953488,14.7784431 C6.85658523,15.5928184 5.90698233,16 4.79069767,16 C3.48836558,16 2.36434581,15.4491073 1.41860465,14.3473054 C0.472863488,13.2455035 0,11.7684723 0,9.91616766 C0,7.76046826 0.643404419,5.82835186 1.93023256,4.11976048 C3.2170607,2.4111691 5.24804814,1.03792934 8.02325581,0 Z" ></path>
+													</g>
+												</svg>
+											</div>
+											<p>Me ha encantado he aprendido ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quam magna, vulputate at sem id, gravida laoreet risus.</p>
+										</blockquote>
+										<div class="source">
+											<div class="row align-items-center">
+												<div class="col-3 col-lg-4">
+													<div class="profile"><img class="profile-image img-fluid" src="assets/images/users/user-3.jpg" alt=""></div>
+												</div>
+												<div class="col-9 col-lg-8">
+													<div class="name font-weight-bold">Jose Luis T.</div>
+													<div class="meta">Madrid</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Opinion 4-->
+								<div class="col-12 col-md-6 col-lg-4 mb-4">
+									<div class="review-item rounded p-5">
+										<blockquote class="quote mb-4">
+											<div class="quote-icon-holder">
+												<svg class="quote-icon-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<path class="quote-icon-path" d="M19.2093023,0 L19.2093023,1.17365269 C17.5968912,1.78044216 16.3333379,2.73452443 15.4186047,4.03592814 C14.5038714,5.33733186 14.0465116,6.69061174 14.0465116,8.09580838 C14.0465116,8.39920311 14.0930228,8.62275377 14.1860465,8.76646707 C14.2480623,8.86227593 14.3178291,8.91017964 14.3953488,8.91017964 C14.4728686,8.91017964 14.5891465,8.85429198 14.744186,8.74251497 C15.2403126,8.37524766 15.8682133,8.19161677 16.627907,8.19161677 C17.5116323,8.19161677 18.2945702,8.56287054 18.9767442,9.30538922 C19.6589181,10.0479079 20,10.9301346 20,11.9520958 C20,13.0219614 19.608531,13.9640678 18.8255814,14.7784431 C18.0426317,15.5928184 17.0930288,16 15.9767442,16 C14.6744121,16 13.5503923,15.4491073 12.6046512,14.3473054 C11.65891,13.2455035 11.1860465,11.7684723 11.1860465,9.91616766 C11.1860465,7.76046826 11.8294509,5.82835186 13.1162791,4.11976048 C14.4031072,2.4111691 16.4340947,1.03792934 19.2093023,0 Z M8.02325581,0 L8.02325581,1.17365269 C6.41084465,1.78044216 5.1472914,2.73452443 4.23255814,4.03592814 C3.31782488,5.33733186 2.86046512,6.69061174 2.86046512,8.09580838 C2.86046512,8.39920311 2.90697628,8.62275377 3,8.76646707 C3.06201581,8.86227593 3.13178256,8.91017964 3.20930233,8.91017964 C3.28682209,8.91017964 3.4031,8.85429198 3.55813953,8.74251497 C4.05426605,8.37524766 4.68216674,8.19161677 5.44186047,8.19161677 C6.32558581,8.19161677 7.10852372,8.56287054 7.79069767,9.30538922 C8.47287163,10.0479079 8.81395349,10.9301346 8.81395349,11.9520958 C8.81395349,13.0219614 8.42248453,13.9640678 7.63953488,14.7784431 C6.85658523,15.5928184 5.90698233,16 4.79069767,16 C3.48836558,16 2.36434581,15.4491073 1.41860465,14.3473054 C0.472863488,13.2455035 0,11.7684723 0,9.91616766 C0,7.76046826 0.643404419,5.82835186 1.93023256,4.11976048 C3.2170607,2.4111691 5.24804814,1.03792934 8.02325581,0 Z" ></path>
+													</g>
+												</svg>
+											</div>
+											<p>Gran curso lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum mi sed tortor lobortis, nec feugiat nisi venenatis.</p>
+										</blockquote>
+										<div class="source">
+											<div class="row align-items-center">
+												<div class="col-3 col-lg-4">
+													<div class="profile"><img class="profile-image img-fluid" src="assets/images/users/user-4.jpg" alt=""></div>
+												</div>
+												<div class="col-9 col-lg-8">
+													<div class="name font-weight-bold">Gabino Diego</div>
+													<div class="meta">Madrid</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Opinion 5-->
+								<div class="col-12 col-md-6 col-lg-4 mb-4 align-items-center order-1 order-lg-0">
+									<div class="review-item item-promo rounded p-5">
+										<h4 class="item-promo-heading mb-3">Unete, Ya Somos Mas De 1000 En España Y Ampliando Familia En Otros Paises De Habla Hispana!</h4>
+										<div class="item-promo-desc mb-3">Esto Es Lo Que Dicen Algunos De Nuestros Clientes...</div>
+										<a class="btn btn-ghost scrollto" href="#section-precio">Unete Ahora</a>
+									</div>
+								</div>
+								<!--Opinion 6-->
+								<div class="col-12 col-md-6 col-lg-4 mb-4">
+									<div class="review-item rounded p-5">
+										<blockquote class="quote mb-4">
+											<div class="quote-icon-holder">
+												<svg class="quote-icon-svg" width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+													<g  stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+														<path class="quote-icon-path" d="M19.2093023,0 L19.2093023,1.17365269 C17.5968912,1.78044216 16.3333379,2.73452443 15.4186047,4.03592814 C14.5038714,5.33733186 14.0465116,6.69061174 14.0465116,8.09580838 C14.0465116,8.39920311 14.0930228,8.62275377 14.1860465,8.76646707 C14.2480623,8.86227593 14.3178291,8.91017964 14.3953488,8.91017964 C14.4728686,8.91017964 14.5891465,8.85429198 14.744186,8.74251497 C15.2403126,8.37524766 15.8682133,8.19161677 16.627907,8.19161677 C17.5116323,8.19161677 18.2945702,8.56287054 18.9767442,9.30538922 C19.6589181,10.0479079 20,10.9301346 20,11.9520958 C20,13.0219614 19.608531,13.9640678 18.8255814,14.7784431 C18.0426317,15.5928184 17.0930288,16 15.9767442,16 C14.6744121,16 13.5503923,15.4491073 12.6046512,14.3473054 C11.65891,13.2455035 11.1860465,11.7684723 11.1860465,9.91616766 C11.1860465,7.76046826 11.8294509,5.82835186 13.1162791,4.11976048 C14.4031072,2.4111691 16.4340947,1.03792934 19.2093023,0 Z M8.02325581,0 L8.02325581,1.17365269 C6.41084465,1.78044216 5.1472914,2.73452443 4.23255814,4.03592814 C3.31782488,5.33733186 2.86046512,6.69061174 2.86046512,8.09580838 C2.86046512,8.39920311 2.90697628,8.62275377 3,8.76646707 C3.06201581,8.86227593 3.13178256,8.91017964 3.20930233,8.91017964 C3.28682209,8.91017964 3.4031,8.85429198 3.55813953,8.74251497 C4.05426605,8.37524766 4.68216674,8.19161677 5.44186047,8.19161677 C6.32558581,8.19161677 7.10852372,8.56287054 7.79069767,9.30538922 C8.47287163,10.0479079 8.81395349,10.9301346 8.81395349,11.9520958 C8.81395349,13.0219614 8.42248453,13.9640678 7.63953488,14.7784431 C6.85658523,15.5928184 5.90698233,16 4.79069767,16 C3.48836558,16 2.36434581,15.4491073 1.41860465,14.3473054 C0.472863488,13.2455035 0,11.7684723 0,9.91616766 C0,7.76046826 0.643404419,5.82835186 1.93023256,4.11976048 C3.2170607,2.4111691 5.24804814,1.03792934 8.02325581,0 Z" ></path>
+													</g>
+												</svg>
+											</div>
+											<p>He aprendido mucho lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quam magna, vulputate at sem id, gravida laoreet risus.</p>
+										</blockquote>
+										<div class="source">
+											<div class="row align-items-center">
+												<div class="col-3 col-lg-4">
+													<div class="profile"><img class="profile-image img-fluid" src="assets/images/users/user-5.jpg" alt=""></div>
+												</div>
+												<div class="col-9 col-lg-8">
+													<div class="name font-weight-bold">José-Apeles</div>
+													<div class="meta">Barcelona</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Seccion del tarifas-->
+					<div id="section-precio" class="section-precio py-5">
+						<div class="container">
+							<div class="single-col-max mx-auto">
+							<h3 class="text-center mb-5">Compre O Pruebe Este Curso</h3>
+							<div class="pricing-plan">
+								<div class="row">
+									<!--Tarifa basica-->
+									<div class="col-12 col-lg-6 mb-4 mb-lg-0">
+										<div class="plan-item rounded">
+											<div class="plan-header">
+												<h4 class="plan-heading rounded-top p-3  theme-bg-primary">Demo</h4>
+											</div>
+											<!--Detalles tarifa basica-->
+											<div class="plan-details p-4">
+												<div class="plan-desc text-center mb-4">
+													<div class="plan-price">0€</div>
+													<div class="plan-price-desc">Acceso Limitado</div>
+												</div>
+												<div class="plan-content px-3">
+													<div class="plan-content-intro">En la version Demo tiene acceso a:</div>
+													<ul class="plan-content-list list-unstyled">
+														<li><i class="theme-check-icon fas fa-check mr-2"></i>Acceso basico a material multimedia</li>
+														<li><i class="theme-check-icon fas fa-check mr-2"></i>5 recursos adicionales</li>
+													</ul>
+												</div>
+											</div>
+											<div class="plan-cta text-center px-4">
+												<a class="btn btn-ghost btn-block" href="#" target="_blank">Solicita Una Demo</a>
+											</div>
+										</div>
+									</div>
+									<!--Tarifa Premium-->
+									<div class="col-12 col-lg-6 mb-4 mb-lg-0">
+										<div class="plan-item rounded">
+											<div class="plan-header">
+												<h4 class="plan-heading rounded-top p-3 theme-bg-primary">Premium</h4>
+											</div>
+											<!--Detalles tarifa Premium-->
+											<div class="plan-details p-4">
+												<div class="plan-desc text-center mb-4">
+													<div class="plan-price">99€</div>
+													<div class="plan-price-desc">Acceso Ilimitado</div>
+												</div>
+												<div class="plan-content px-3">
+													<div class="plan-content-intro">En la version Premium tiene acceso a:</div>
+													<ul class="plan-content-list list-unstyled">
+														<li><i class="theme-check-icon fas fa-check mr-2"></i>Acceso a todos los videos 100+ videos</li>
+														<li><i class="theme-check-icon fas fa-check mr-2"></i>Acceso a todos los recursos del curso</li>
+														<li><i class="theme-check-icon fas fa-check mr-2"></i>Acceso a todos los recursos adicionales del curso</li>
+														<li><i class="theme-check-icon fas fa-check mr-2"></i>Chat y foro de consultas</li>
+														<li><i class="theme-check-icon fas fa-check mr-2"></i>Acceso a las actualizaciones de contenido del curso</li>
+														<li><i class="theme-check-icon fas fa-check mr-2"></i>Certificacion Digital al aprobar el curso</li>
+													</ul>
+												</div>
+											</div>
+											<div class="plan-cta text-center px-4">
+												<a class="btn btn-primary btn-block" href="#" target="_blank">Unete Ahora</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Seccion del carrousel-->
+					<div id="section-carrousel" class="section-carrousel my-lg-5">
+						<div class="container">
+							<div class="container-inner p-5 theme-bg-light rounded">
+								<div class="row">
+									<div class="single-col-max mx-auto">
+										<h3 class="text-center mb-5">Sin Escusas, Donde Y Cuando Quieras</h3>
+									</div>
+									<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+											<img class="d-block w-100" src="assets/images/carousel/carousel1.jpg" alt="First slide">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>La mente es como un paracaídas: sólo funciona si se abre.</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+											</div>
+											<div class="carousel-item">
+											<img class="d-block w-100" src="assets/images/carousel/carousel2.jpg" alt="Second slide">
+											<div class="carousel-caption d-none d-md-block">
+													<h5>Siempre se puede ser mejor</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+											</div>
+											<div class="carousel-item">
+											<img class="d-block w-100" src="assets/images/carousel/carousel3.jpg" alt="Third slide">
+											<div class="carousel-caption d-none d-md-block">
+													<h5>Cualquiera que sigue aprendiendo permanece joven</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+											</div>
+											<div class="carousel-item">
+											<img class="d-block w-100" src="assets/images/carousel/carousel4.jpg" alt="Third slide">
+											<div class="carousel-caption d-none d-md-block">
+													<h5>El gran objetivo del aprendizaje no es el conocimiento, sino la acción.</h5>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+											</a>
+										</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!--Seccion otros cursos-->
+					<div id="section-otrosCursos" class="section section-related py-5">
+						<div class="container">
+							<h3 class="section-title mb-5">Cursos Que Te Pueden Interesar</h3>
+							<div class="related-items row">
+								<div class="col-12 col-lg-4 mb-4 mb-lg-0">
+									<div class="item">
+										<div class="item-thumb">
+											<img class="img-fluid rounded-top" src="assets/images/course-1.jpg" alt="">
+										</div>
+										<div class="item-desc p-4 rounded-bottom">
+											<h4 class="title mb-3"><a href="#">Curso De Desarrollo De Interfaces Web Con Bootstrap </a></h4>
+											<div class="summary mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac aliquet felis. Suspendisse dignissim neque nibh, vitae vulputate elit luctus accumsan. </div>
+											<div class="text-center">
+												<a class="btn btn-ghost btn-block" href="#">Mas Informacion</a>
+											</div>
+										</div>
+											
+									</div>
+								</div>
+								<div class="col-12 col-lg-4 mb-4 mb-lg-0">
+									<div class="item">
+										<div class="item-thumb">
+											<img class="img-fluid rounded-top" src="assets/images/course-2.jpg" alt="">
+										</div>
+										<div class="item-desc p-4 rounded-bottom">
+											<h4 class="title mb-3"><a href="#">Curso De Tecnicas De Estudio</a></h4>
+											<div class="summary mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac aliquet felis. Suspendisse dignissim neque nibh, vitae vulputate elit luctus accumsan. </div>
+											<div class="text-center">
+												<a class="btn btn-ghost btn-block" href="#">Mas Informacion</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-lg-4">
+									<div class="item">
+										<div class="item-thumb">
+											<img class="img-fluid rounded-top" src="assets/images/course-3.jpg" alt="">
+										</div>
+										<div class="item-desc p-4 rounded-bottom">
+											<h4 class="title mb-3"><a href="#">Curso Preparacion De Temarios Para Oposiciones</a></h4>
+											<div class="summary mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac aliquet felis. Suspendisse dignissim neque nibh, vitae vulputate elit luctus accumsan. </div>
+											<div class="text-center">
+												<a class="btn btn-ghost btn-block" href="#">Mas Informacion</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--Seccion del contacto-->
+					<div class="section-title mb-5">
+						<h3 class="section-title mb-5">Quieres Contactar Con Nosotros</h3>
+						<button type="button" target="_blank" class="btn btn-primary my-2 my-sm-0" data-toggle="modal" data-target="#formulariosModal">Contactanos</button>
+					</div>
+					<div class="section section-contact text-center">
+						<div class="container">
+							<div class="container-inner p-5 position-relative theme-bg-primary rounded text-white">
+								<div class="section-bg-container"></div>
+								<div class="section-col-max mx-auto">
+									<h3 class="section-title mb-4 text-white">O si lo prefieres</h3>
+									<div class="profile-holder mb-3"><img class="profile-image" src="assets/images/profesor.jpg" alt="image"></div>
+									<p class="intro">Tambien, si lo deseas puedes contactarme y programamos una videollamada <br>Puedes contartarme al correo <a  href="#">Hola@rlearning.com</a></p>
+									<h5 class="intro text-white">Para abrir nuevos caminos, hay que inventar, experimentar, crecer, correr riesgos, romper las reglas, equivocarse… y divertirse</h5>
+									<div>Muchas veces la gente no sabe lo que quiere hasta que se lo enseñas :)</div>
+									<div class="text-center mt-4">
+										<ul class="social-list list-unstyled mx-auto mb-0">
+											<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li> 
+											<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+											<li class="list-inline-item"><a href="#"><i class="fas fa-envelope fa-fw"></i></a></li>
+										</ul>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!--Seccion footer-->
+			<footer class="footer pb-5 text-center">
+				<div class="container">
+					<div class="copyright mb-2">
+						Diseñado por <i class="fas fa-user-graduate" style="color: black;">
+						</i> Jose Antonio Prats Romero</a> 
+					</div>
+					<div class="legal mb-0">
+						<ul class="list-inline mb-0">
+							<li class="list-inline-item"><a 
+							href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" 
+							target="_blank">Diseñado En Bootstrap</a></li>
+							<li class="list-inline-item theme-text-light">|</li>
+							<li class="list-inline-item"><a href="#">
+							&#169 Todos los Derechos Reservados</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Fin de la estructura de la web, ahora comenzamos con multimedia, cookies y componentes BootStrap como modales  -->
+		
+		<!-- Video del modulo de introduccion al curso  -->
+			<div class="modal modal-intoVideo" id="modal-intoVideo" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<div class="modal-body">
+							<div class="video-container embed-responsive embed-responsive-16by9">
+								<iframe width="672" height="504" src="https://www.youtube.com/embed/MoNxNbMYnE4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Style de la barra de cookies -->
+			<style type="text/css">
+				#barraaceptacion {
+					display:none;
+					position:fixed;
+					left:0px;
+					right:0px;
+					bottom:0px;
+					width:100%;
+					text-align:center;
+					min-height:40px;
+					background-color: rgba(0, 0, 0, 0.7);
+					color:#fff;
+					z-index:99999;
+				}
+				.inner {
+					text-align:center;
+					font-family:verdana;
+					font-size:12px;
+					margin:auto;
+				}
+				.spanfoot {
+					vertical-align: middle;
+					text-align:center;
+				}
+				.inner a.ok {	
+					color:#00ff2e;
+					text-decoration:none;
+				}
+				.inner a.info {
+					margin-left:5px;
+					text-decoration:none;
+					color:#faff00;
+				}
+			</style>
+
+		<!--Código de la política de cookies -->
+			<div id="barraaceptacion" style="display: none;">
+				<div class="inner">
+					<span class="spanfoot">
+						Nuestra web usa Cookies para obtener datos estadísticos, 
+						si continúa navegando consideramos que acepta el uso de Cookies.
+						<a href="#" target="_blank" class="info">Más información</a>&nbsp;|&nbsp;<a 
+						class="ok" href="javascript:PonerCookie()">Cerrar</a>
+					</span>
+				</div>
+			</div>
+			<script>
+				$(document).ready(function(){
+					$("a").click(function(){
+						if(getCookie('tucookie')!="1"){
+							PonerCookie();
+						}
+					});
+				});
+				<div>
+				
+
+				// funcion para comprobar si tiene una cookie ya asignada
+					function getCookie(c_name){
+						var c_value = document.cookie;
+						var c_start = c_value.indexOf(" " + c_name + "=");
+						if (c_start == -1){
+							c_start = c_value.indexOf(c_name + "=");
+						}
+						if (c_start == -1){
+							c_value = null;
+						}else{
+							c_start = c_value.indexOf("=", c_start) + 1;
+							var c_end = c_value.indexOf(";", c_start);
+							if (c_end == -1){
+								c_end = c_value.length;
+							}
+							c_value = unescape(c_value.substring(c_start,c_end));
+						}
+						return c_value;
+					}
+				// funcion para fijar la cookie
+					function setCookie(c_name,value,exdays){
+						var exdate=new Date();
+						exdate.setDate(exdate.getDate() + exdays);
+						var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+						document.cookie=c_name + "=" + c_value;
+					}
+				//Mostramos la pantalla si no tiene la cookie, pero si la tiene la ocultamos
+					if(getCookie('tucookie')!="1"){
+						document.getElementById("barraaceptacion").style.display="block";
+					}else{
+						document.getElementById("barraaceptacion").style.display="none";
+					}
+				//funcion para llamar a la función setcookie y establecer los parámetros que deseamos
+					function PonerCookie(){
+						setCookie('tucookie','1',365);
+						document.getElementById("barraaceptacion").style.display="none";
+					}
+			</script>
+		<!-- Fin del código de cookies -->
+
+		<!-- Estilo para el modal -->
+			<style>
+
+				.fullscreen-modal .modal-dialog {
+					margin: 0;
+					margin-right: auto;
+					margin-left: auto;
+					width: 100%;
+				}
+				@media (min-width: 768px) {
+					.fullscreen-modal .modal-dialog {
+						width: 750px;
+					}
+				}
+				@media (min-width: 992px) {
+					.fullscreen-modal .modal-dialog {
+						width: 970px;
+					}
+				}
+				@media (min-width: 1200px) {
+					.fullscreen-modal .modal-dialog {
+						width: 1170px;
+					}
+				}
+			</style>
+
+		<!-- Modal  para el login -->
+			<div class="modal fullscreen-modal fade" id="loginModal" tabindex="-1" role="dialog" 
+			aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Inicio De Sesion</h4>
+					</div>
+					<div class="modal-body">
+							<div class="form-group">
+								<label for="correo">Usuario o Email</label>
+								<input id="correo" name="correo" class="form-control" type="email" 
+								placeholder="Usuario o Email">
+								<label for="palabraSecreta">Contraseña</label>
+								<input id="palabraSecreta" name="palabraSecreta" class="form-control" 
+								type="password" placeholder="Contraseña">
+							</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" href="#" class="btn btn-primary">Entrar</button>
+					</div>
+					</div>
+				</div>
+			</div>
+
+	<!-- Modal  para el registro -->
+			<div class="modal fullscreen-modal fade" id="registroModal" tabindex="-1" role="dialog" 
+			aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Formulario De Registro</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="Nombre">Nombre</label>
+							<input id="nombre" name="nombre" class="form-control" type="text" 
+							placeholder="Introduce tu nombre">
+							<label for="Apellidos">Apellidos</label>
+							<input id="apellidos" name="apellidos" class="form-control" type="text" 
+							placeholder="Introduce tus apellidos">
+							<label for="correo">Email</label>
+							<input id="correo" name="correo" class="form-control" type="email" 
+							placeholder="Correo electronico">
+							<label for="palabraSecreta">Contraseña</label>
+							<input id="palabraSecreta" name="palabraSecreta" class="form-control" 
+							type="password" placeholder="Contraseña">
+							<label></label>
+							<div>
+								<label for="campoSexo">Sexo</label>
+								<button type="button" class="btn btn-warning my-2 my-sm-0">Hombre</button>
+								<button type="button" class="btn btn-warning my-2 my-sm-0">Mujer</button>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" href="#" class="btn btn-primary">Enviar Datos</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Modal  para el Contacto, sugerencias y empresa -->
+			<div class="modal fullscreen-modal fade" id="formulariosModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Formulario De Contacto</h4>
+					</div>
+					<div class="modal-body">
+						
+						<div class="form-group">
+							<div class="row mt-2 justify-content-center">
+								<div class="col-md-6">
+								<div class="list-group">
+									<a class="list-group-item list-group-item-action active" data-toggle="list" href="#panel1">Que necesitas, Contactanos</a>
+									<a class="list-group-item list-group-item-action" data-toggle="list" href="#panel2">Necesitas algo y no lo tenemos, Contactanos</a>
+									<a class="list-group-item list-group-item-action" data-toggle="list" href="#panel3">Eres una empresa, Contactanos</a>
+								</div>
+								</div>
+								<div class="col-md-4">
+								<div class="tab-content">
+									<div class="tab-pane fade show active" id="panel1">
+
+										<label for="correo">Email</label>
+										<input id="correo" name="correo" class="form-control" type="email" placeholder="Correo electronico">
+										<label for="Nombre">Que necesitas</label>
+										<textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+										<label class="form-label" for="textAreaExample"></label>
+									</div>
+									<div class="tab-pane fade" id="panel2" >
+										<div class="tab-pane fade show active" id="panel1">
+											<label for="correo">Email</label>
+											<input id="correo" name="correo" class="form-control" type="email" placeholder="Correo electronico">
+											<label for="Nombre">Que has visto interesante</label>
+											<textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+											<label class="form-label" for="textAreaExample"></label>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="panel3" >
+										<label for="Nombre">Nombre Empresa</label>
+										<input id="nombreEmpresa" name="nombre" class="form-control" type="text" placeholder="Introduce el nombre de tu empresa">
+										<label for="Apellidos">Nombre</label>
+										<input id="nombre" name="nombre" class="form-control" type="text" placeholder="Introduce tu nombre">
+										<label for="correo">Email</label>
+										<input id="correo" name="correo" class="form-control" type="email" placeholder="Correo electronico">
+										<label for="Nombre">¿Que necesita su empresa?</label>
+										<textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+										<label class="form-label" for="textAreaExample"></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" href="#" class="btn btn-primary">Enviar Datos</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Javascript -->
+		<script src="assets/plugins/jquery-3.4.1.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/back-to-top.js"></script>
+		<script src="assets/plugins/jquery.scrollTo.min.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+

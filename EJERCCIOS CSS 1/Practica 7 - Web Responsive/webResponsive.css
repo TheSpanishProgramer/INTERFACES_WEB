@@ -1,0 +1,125 @@
+nav,#contenido, #lateral, #lateralSecundario {
+    
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid black;
+    
+}
+
+header {
+    
+    width: 100%;
+}
+
+#cuerpo {
+    width: 95%;
+}
+
+nav {
+    
+    width: 10%;
+    padding: 0 1%;
+}
+
+
+ul {
+    
+    padding: 0;
+    
+}
+
+
+li {
+    
+    list-style: none;
+    
+}
+
+#contenido {
+	
+    width: 60%;
+    text-align: justify;
+    
+}
+
+#lateral {
+	box-sizing: 12%;
+    width: 12%;
+    padding: 0 2%;
+    text-align: justify;
+    
+}
+
+#lateralSecundario {
+	
+    width: 12%;
+    box-sizing: 12%;
+    text-align: justify;
+    
+}
+
+@media (max-width: 800px) {
+    
+    #lateralSecundario {
+        
+        width: 60%;
+        margin: 0 0 0 10%;
+        float: none;
+	
+    }
+    
+    #lateral {
+	
+        width: 24%;
+        padding: 0 0 0 2%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    
+    #lateral {
+	
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    #lateralSecundario {
+        
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+	
+    }
+    
+    #contenido {
+	
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    nav {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    
+    nav ul li {
+        
+        display: inline-block;
+        list-style-image: none;
+        margin-right: 2%;
+        
+    }
+    
+    header {
+        
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+}

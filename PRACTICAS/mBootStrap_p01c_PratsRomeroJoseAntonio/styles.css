@@ -1,0 +1,13 @@
+.vendido {
+    top: 120px;
+    left: 60px;
+    border: 1.2px solid rgb(31, 238, 114);
+    background-color: rgb(160, 158, 158);
+    opacity: 0.8;
+    color: blue;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}

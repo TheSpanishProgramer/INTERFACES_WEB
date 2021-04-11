@@ -1,0 +1,32 @@
+/*Caracteristicas generales: margenes 0, fuente Font google, tamaño de fuente responsive*/
+
+  /* BOX-SIZING para calcular directamente todas las dimensiones de las cajas */
+
+
+  /* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+
+
+/*Aspecto especifico*/
+  /* classe .container - fuente, color, 80% ancho y centrado*/
+
+
+  /*color de la letra específico*/
+
+  /*La cabecera*/
+
+/* El contenedor flex para la primera fila de contenido .content_wrapper. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+  /* El menú */
+
+  /* El elemento principal main*/
+
+  /* Artículo. Imágenes pequeñas */
+
+/* El contenedor flex para la segunda fila de contenido .articles. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
+/* Pie de la página */
+/* El contenedor flex para la tercera fila de contenido footer. Dirección, El ajuste,
+ Alineación horizontal, Alineación vertical   */
+
